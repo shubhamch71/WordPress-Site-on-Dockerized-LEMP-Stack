@@ -12,7 +12,7 @@ if is_installed docker; then
 else
     echo "Docker is not installed. Installing Docker..."
     sudo yum install docker -y
-    # Add the current user to the docker group to run docker without sudo
+    # Add the current user to the docker group to run docker 
     sudo usermod -aG docker $USER
     sudo systemctl start docker 
     sudo systemctl enable docker 
@@ -62,7 +62,7 @@ server {
 }
 EOF
 
-    # Create the WordPress Dockerfile for custom PHP configurations (optional)
+    # Create the WordPress Dockerfile for custom PHP configurations 
     cat <<EOF >Dockerfile
 FROM wordpress:php7.4-fpm
 
