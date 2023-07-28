@@ -127,7 +127,7 @@ EOF
     done
 
     # Prompt the user to open the site in a browser
-    echo "The site is up and healthy. Do you want to open http://$site_name in your browser? (y/n)"
+    echo "The site is up and healthy. Do you want to open http://$site_name in your browser? (y/n). To exit lynx you can traverse to the bottom of page using down arrow key and then press q to quit and press y"
     read -r choice
     if [ "$choice" == "y" ] || [ "$choice" == "Y" ]; then
 	sleep 2
